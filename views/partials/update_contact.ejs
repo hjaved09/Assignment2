@@ -1,0 +1,41 @@
+<%- include('partials/header*) %>
+
+
+<main id-"site-main"> <div class-"container">
+<div class="box-nav d-flex justify-between">
+     <div class="filter"> <a href="/dashboard"
+><i class="fas fa-angle-double-left"></i> All Contacts</a>
+     </div></div>
+
+<div class-"form-title text-center">
+<h2 class "text-dark"><Update Contacts</h2>
+<span class-"text-dark"> Use the below form to Update an contacts</span>
+</div>
+
+<form method="POST" id="update _user" class="Login-box"> 
+    <div class-"new user">
+<div class="form-group mt-3">
+     <label for="name" class="text-dark">Name</label>
+<input type="hidden" name="id" vatue=" <%= user._id %>"/>
+<input types"text"
+nme-"name"
+value="<%= user.name %>"
+placeholder ="Mark Stoenis"
+/>
+<div class="form-group mt-3"> <label for-"Email" class="text-dark">Email</label>
+    <input
+    type="text"
+    name="email"
+    value="<%=user.email%>"
+    placeholder="example@gmail.com"
+    />
+</div>
+<div class="form-group mt-3">
+    <button type="submite" class="btn btn-danger text-dark update">
+        Save
+    </button>
+</div>
+</div>
+</form>
+</div></main>
+<%-include('partials/footer')%>
